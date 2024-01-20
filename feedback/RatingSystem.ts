@@ -1,4 +1,6 @@
-class RatingSystem {
+import { Feedback } from "./Feedback";
+
+export class RatingSystem {
   private feedbackList: Feedback[];
 
   constructor() {

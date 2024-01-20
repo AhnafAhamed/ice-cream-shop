@@ -1,4 +1,4 @@
-class Favorite {
+export class Favorite {
   private customerId: string;
   private combinationName: string;
   private combinationDetails: string;

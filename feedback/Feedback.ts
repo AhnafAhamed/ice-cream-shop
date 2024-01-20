@@ -1,4 +1,4 @@
-class Feedback {
+export class Feedback {
   private orderId: string;
   private customerId: string;
   private rating: number; // Assuming a rating scale of 1 to 5

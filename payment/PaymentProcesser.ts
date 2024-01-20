@@ -1,4 +1,6 @@
-class PaymentProcessor {
+import { PaymentStrategy } from "./IPaymentStrategy ";
+import { Order } from "../order/Order";
+export class PaymentProcessor {
   private strategy: PaymentStrategy;
 
   constructor(strategy: PaymentStrategy) {
@@ -9,7 +11,8 @@ class PaymentProcessor {
     this.strategy = strategy;
   }
 
-  processPayment(amount: number): string {
+  processPayment(order: Order): string {
+    const amount = order.getTotalPrice();
     return this.strategy.processPayment(amount);
   }
 }

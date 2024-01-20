@@ -1,3 +1,3 @@
-interface OrderObserver {
+export interface OrderObserver {
   update(orderStatus: string): void;
 }

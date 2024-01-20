@@ -1,4 +1,8 @@
-class Customer implements OrderObserver {
+import { Favorite } from "../favorite/Favorite";
+import { OrderObserver } from "../order/IOrderObserver";
+import { Order } from "../order/Order";
+
+export class Customer implements OrderObserver {
   private id: string;
   private name: string;
   private email: string;
