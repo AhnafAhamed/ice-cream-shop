@@ -28,20 +28,3 @@ export class RatingSystem {
     );
   }
 }
-
-// Example usage:
-let ratingSystem = new RatingSystem();
-ratingSystem.addFeedback(
-  new Feedback("order123", "customer456", 4, "Great flavors!")
-);
-ratingSystem.addFeedback(
-  new Feedback("order124", "customer457", 5, "Loved the ice cream!")
-);
-
-console.log(`Average Rating: ${ratingSystem.getAverageRating()}`);
-let specificFeedback = ratingSystem.getFeedbackForOrder("order123");
-if (specificFeedback) {
-  console.log(
-    `Feedback for Order ID ${specificFeedback.getOrderId()}: Rating - ${specificFeedback.getRating()}`
-  );
-}

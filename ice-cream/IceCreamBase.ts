@@ -19,8 +19,3 @@ export class IceCreamBase {
     return `${this.flavor} Ice Cream`;
   }
 }
-
-// Example usage:
-let vanilla = new IceCreamBase("Vanilla", 2.5);
-console.log(vanilla.toString());
-console.log("Price:", vanilla.getBasePrice());

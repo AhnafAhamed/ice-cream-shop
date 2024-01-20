@@ -1,7 +1,7 @@
 export class Feedback {
   private orderId: string;
   private customerId: string;
-  private rating: number; // Assuming a rating scale of 1 to 5
+  private rating: number;
   private comments: string;
 
   constructor(
@@ -32,14 +32,3 @@ export class Feedback {
     return this.comments;
   }
 }
-
-// Example usage:
-let customerFeedback = new Feedback(
-  "order123",
-  "customer456",
-  4,
-  "Great flavors and fast service!"
-);
-console.log(`Feedback for Order ID ${customerFeedback.getOrderId()}:`);
-console.log(`Rating: ${customerFeedback.getRating()}/5`);
-console.log(`Comments: ${customerFeedback.getComments()}`);

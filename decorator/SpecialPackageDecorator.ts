@@ -2,7 +2,7 @@ import { Order } from "../order/Order";
 import { OrderDecorator } from "./OrderDecorator";
 
 export class SpecialPackagingDecorator extends OrderDecorator {
-  private additionalCost = 3; // Fixed cost for special packaging
+  private additionalCost = 3;
 
   constructor(order: Order) {
     super(order);

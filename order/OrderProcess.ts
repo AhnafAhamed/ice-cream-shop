@@ -17,7 +17,7 @@ export class OrderProcess {
     this.confirmationState = new ConfirmationState();
     this.cancelState = new ConfirmationState();
 
-    this.currentState = this.selectionState; // Initial state
+    this.currentState = this.selectionState;
   }
 
   setState(state: OrderState) {
@@ -56,9 +56,3 @@ export class OrderProcess {
     this.currentState.cancelOrder(this);
   }
 }
-
-// Example usage:
-let orderProcess = new OrderProcess();
-orderProcess.selectItems(); // Moves to review state
-orderProcess.reviewOrder(); // Moves to confirmation state
-orderProcess.confirmOrder(); // Order confirmed

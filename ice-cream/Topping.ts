@@ -19,8 +19,3 @@ export class Topping {
     return `${this.name} Topping`;
   }
 }
-
-// Example usage:
-let chocolateChips = new Topping("Chocolate Chips", 0.5);
-console.log(chocolateChips.toString());
-console.log("Price:", chocolateChips.getPrice());
